@@ -15,6 +15,7 @@ public class ProyectoService {
     public ProyectoRepository proyecRep;
     
      public void crear(Proyecto p) {
+        
         proyecRep.save(p);
     }
 

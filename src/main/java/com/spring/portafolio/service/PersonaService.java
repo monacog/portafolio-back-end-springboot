@@ -29,9 +29,9 @@ public class PersonaService {
        return persRepo.findAll();
     }
 
-    public Object buscarId(Long id) {
+    public Persona buscarId(Long id) {
 
-        return persRepo.findById(id);
+        return persRepo.findById(id).get();
     }
 
     public void editar(Persona p) {
